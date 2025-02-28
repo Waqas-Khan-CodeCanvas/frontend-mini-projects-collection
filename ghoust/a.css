@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+.bulb{
+    /* text-align: center;
+    font-size: 40px;
+     */
+    color: black;
+    
+}
+.onbulb{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(32, 255, 32);
+}
+#para{
+    color: aqua;
+    font-size: 15px;
+}
