@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+
+}
+.loader{
+    width: 200px;
+    height: 200px;
+    /* background: black; */
+    border-radius: 50%;
+    border: 13px dotted rgba(0, 0, 0, 0.3);
+    border-right-color: blue;
+    border-left-color: yellow;
+    border-top-color: green;
+    border-bottom-color: red;
+    animation: spin 2s infinite;
+    
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
