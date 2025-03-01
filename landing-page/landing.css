@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+    /* background: #ededed; */
+}
+/* navbar section */
+.navbar{
+    width: 100%;
+    text-wrap: balance;
+
+}
+.navdiv{
+    width: 100%;
+    height: 60px;
+    background: rgba(140, 140, 140, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navdiv h3{
+    font-size: 35px ;
+    font-weight: 600;
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+.navdiv li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+}
+.navdiv li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
+
+/* main hero section */
+.hero-section{
+    height: 510px;
+    background-image: url("https://media.istockphoto.com/id/539818790/photo/workroom-travel-agency.jpg?s=1024x1024&w=is&k=20&c=VBxL5yRaasyndVRwlfohRS2J7PPP-2Ax2w9KHydKTb4=");
+    background-repeat: no-repeat;
+    background-size: 1270px 500px;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+
+}
+.hero-section h5{
+    position: relative;
+    font-size: 65px;
+    color: rgb(255, 255, 255);
+    top: 20%;
+    left: 10%;
+    background: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+.hero-section p{
+    background: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    position: absolute;
+    font-size: 30px;
+    color:  rgb(255, 255, 255);
+    top: 31%;
+    left: 17%;
+    padding:10px;
+}
+.hero-section h4{
+    background: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    position: absolute;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    top: 41%;
+    left: 10%;
+    padding: 10px;
+
+}
+
+/* section-one */
+.section-one h4{
+    font-size: 39px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+/* work section gallry */
+.work-gallry{
+    display: flex;
+    background: #a8a8a8;
+    padding: 10px;
+    justify-content: center;
+
+}
+.work-gallry .work{
+    width: 300px;
+    margin: 25px;
+    /* padding: 10px; */
+    border: 1px solid black;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0,0.3);
+    transition: .6s;
+}
+.work-gallry .work:hover{
+    transform: scale(1.1);
+}
+.work-gallry .work .title{
+    font-size: 30px;
+    text-align: center;
+    /* margin: 10px 0; */
+    padding: 10px 0;
+}
+.work-gallry .work p{
+    font-size: 17px;
+    margin:10px 15px  25px 15px ;
+
+}
+
+/* contact me section */
+.contact{
+    display: flex;
+    padding: 15px;
+}
+.contact-content{
+    
+   
+    box-sizing: border-box;
+    margin: 130px 20px 20px 20px;
+    padding: 20px;
+    /* background: #fff; */
+}
+.contact-content h3{
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 15px 25px 15px;
+    /* width: 300px; */
+}
+.contact-form{
+    width: 40%;
+    margin: 30px  50px 30px 10px ;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0 10px 8px rgba(0, 0, 0,0.1);
+}
+.contact-form h3{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.input{
+    margin-left: 30px;
+    height: 30px;
+    width: 100%;
+    display: inline-block;
+}
+.input input{
+    height: 30px;
+    width: 300px ;
+    margin: 20px;
+    padding: 10px;
+}
+.contact-form p{
+    margin: 20px 0 0 30px;
+}
+.contact-form textarea{
+    margin: 0 130px ;
+    padding: 10px;
+}
+.contact-form button{
+    margin: 10px  10px 0px 130px ;
+    font-size: 16px;
+    padding: 5px;
+    width: 120px;
+    background: rgb(187, 187, 187);
+
+    
+
+}
+/* about us section start */
+.about{
+    display: flex;
+    padding: 150px 15px 15px 15px;
+    height: 500px;
+    background: #fff;
+}
+.about-content{
+    margin: 20px;
+    padding: 20px;
+}
+.about-content h3{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+
+}
+.buttom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttom li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+.buttom-bar{
+    text-align: center;
+    /* margin: 10px; */
+    padding: 10px;
+    background: gray;
+}
