@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --bg-color:#222327;
+    --text-color:#fff ;
+    --main-color: #29fd53 ;
+}
+body{
+    background: var(--bg-color);
+}
+header{
+    height: 100vh;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: var(--bg-color);
+}
+.logo{
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 80px;
+    margin: 0px 40px;
+}
+.logo span{
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar li{
+    display: inline-block;
+    margin-top: 35px;
+}
+.navbar li a{
+    color: var(--text-color);
+    font-size: 16spx;
+    font-weight: bold;
+    margin: 0px 15px 0px 10px ;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    transition:all .5s ease;
+}
+.navbar  a.active{
+    color: var(--main-color);
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    line-height: 80px;
+}
+.menu a{
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0px 25px 0px 15px;
+}
+.menu a span{
+    color: var(--main-color);
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0px 2px;
+}
+.check{
+    display: none;
+    width: 15px ;
+    height: 15px ;
+    line-height: 80px;
+    margin: 33px 30px 35px 10px ;
+    background: var(--main-color);
+}
+@media(max-width:900px){
+    .check{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        width: 280px;
+        height: 200px;
+        background: var(--main-color);
+        display: block;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 20px;
+        flex-direction: column;
+        transition: all .5s ease;
+    }
+    .navbar li {
+        display: flex;
+        /* align-items: center;*/
+        margin:20px 0px;
+        justify-content: center; 
+    }
+    .navbar a:hover{
+        color:white;
+    }
+    .navbar a.active,:hover{
+        color: var(--text-color);
+        transform: translateY(5px);
+    }
+    .open{
+        right: 2%;
+    }
+}
+@media(max-width:420px){
+    .logo{
+        margin: 0px 10px;
+    }
+    .menu a{
+        margin: 0px 10px 0px 5px;
+    }
+    .check{
+        margin: 33px 10px 35px 5px ;
+    }
+}
+p{
+    color: var(--main-color);
+    margin: 30px auto;
+    padding: 50px;
+}
