@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: black;
+    height: 100vh;
+}
+main{
+    background: #fff;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+}
+h1{
+    background: rgb(35, 15, 250);
+    padding: 15px;
+    text-align: center;
+    font-size:40px;
+    color: white;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+form{
+    width: 30%;
+    margin: 30px;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+div{
+}
+input{
+    width: 100%;
+    height: 43px;
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+input:hover{
+    border: 1px solid rgb(2, 27, 255);
+}
+lable{
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 2px;
+}
+button{
+    width: 100%;
+    height: 40px;
+    margin: 5px 0 20px 0;
+    font-size: 20px;
+    background: rgb(35, 15, 250);
+    border: 1px solid black;
+    color: white;
+    transition: .2s ;
+}
+button:hover{
+    background:rgb(0, 98, 255) ;
+    
+}
+
+
+
+table{
+    border: 1px solid black;
+    
+
+}
+table :nth-child(1){
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+
+
+    
+}
+table :nth-child(2){
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 55px;
+  
+}

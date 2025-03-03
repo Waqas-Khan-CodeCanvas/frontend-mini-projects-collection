@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCS</title>
+    <link rel="stylesheet" href="GCS.css">
+</head>
+
+<body>
+    <main>
+        <h1>Grade Calculating System</h1>
+        <section>
+            <form action="#">
+                <div>
+                    <lable>Computer Marks</lable>
+                    <input type="number" id="bookone"  placeholder="Enter marks">
+                </div>
+                <div>
+                    <lable>English Marks </lable>
+                    <input type="number" id="booktwo" placeholder="Enter marks">
+                </div>
+                <div>
+                    <lable>Maths Marks</lable>
+                    <input type="number" id="bookthree" placeholder="Enter marks">
+                </div>
+                <div>
+                    <lable>Physics Marks</lable>
+                    <input type="number" id="bookfour" placeholder="Enter marks">
+                </div>
+                <div>
+                    <lable>Chemistry marks</lable>
+                    <input type="number" id="bookfive" placeholder="Enter marks">
+                </div>
+                <button onclick=" return calculate()">Calculate</button>
+            </form>
+            <table>
+                <tr>
+                    <td>Total Marks</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>Obtained Marks</td>
+                    <td  id="obtain"></td>
+                </tr>
+                <tr>
+                    <td>Percentage</td>
+                    <td id="percentage"></td>
+                </tr>
+                <tr>
+                    <td>Grade</td>
+                    <td id="grade"></td>
+                </tr>
+                <tr>
+                    <td>Remarks</td>
+                    <td id="remarks"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <script src="GCS.js" ></script>
+</body>
+
+</html>
