@@ -1,0 +1,109 @@
+/* now insert google fonts here*/
+
+
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background: #f2f2f2;
+}
+.slide{
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color: #fff;
+    transition: all .5s ease;
+    transform: translate(-180px);
+}
+h1{
+    color: #8000ff;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    color: #011a41;
+    font-weight:bold; 
+    padding: 10px 0;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .2s ease-out;
+}
+ul li:hover a{
+    color: white;
+    background:#8000ff;
+}
+ul li a i{
+    width: 40px;
+    text-align: center;
+}
+input{
+    display: none;
+    visibility: hidden;
+    --webkit-appearance: none;
+}
+.toggle{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.toggle .common{
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    background-color:#8000ff ;
+    border-radius: 50px;
+    transition: .3s ease;
+}
+.toggle .top-line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggle .middle-line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggle .buttom-line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+input:checked ~ .toggle .top-line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+input:checked ~ .toggle .middle-line{
+    opacity: 0;
+    transform: translate(20px);
+}
+input:checked ~ .toggle .buttom-line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+input:checked ~ .slide{
+    transform: translate(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
