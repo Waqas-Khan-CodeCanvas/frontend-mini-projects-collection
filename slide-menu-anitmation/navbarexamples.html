@@ -1,0 +1,120 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar second type</title>
+    <link rel="stylesheet" href="navbarexamples.css">
+    
+</head>
+
+<body>
+    <!-- this section is for fillig navbar ok take care of if don't confuse in this right -->
+    <section>
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Servises</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </section>
+    
+  <!-- <div class="header">
+    <nav id="navbar">
+        <div class="logo">logo</div>
+        <ul id="menu">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>PRODUCTS</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+  </div>
+
+  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit, ea saepe blanditiis dolor numquam aspernatur consequatur fugiat incidunt aliquam quasi atque a laboriosam voluptatibus corrupti sapiente eaque ipsam sed.
+  Nobis iste ullam, itaque tempore labore facilis corporis quibusdam iure, obcaecati laboriosam veritatis sit id eaque maxime laudantium. Harum perspiciatis quia ab blanditiis adipisci ex accusantium voluptatem minima, amet voluptatum.
+  Eaque, fugit ducimus! Maxime earum reiciendis officia illo exercitationem reprehenderit corporis atque numquam dolore nobis vitae vero, ipsum id saepe est aliquam itaque sequi hic quia suscipit? Sint, explicabo quasi?
+  Doloribus similique totam beatae quod fuga eveniet velit exercitationem explicabo, illum minus quos reprehenderit corporis officia, blanditiis, tempora odit eum odio cupiditate. Qui, molestiae! Obcaecati eligendi tempore nesciunt omnis et.
+  Ab adipisci autem neque laboriosam iste quidem omnis expedita dolores! Quidem repudiandae pariatur, alias magnam quisquam commodi facilis voluptatibus suscipit temporibus, expedita aliquid quis veniam eligendi eius quo nihil quia.</p>
+
+  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit, ea saepe blanditiis dolor numquam aspernatur consequatur fugiat incidunt aliquam quasi atque a laboriosam voluptatibus corrupti sapiente eaque ipsam sed.
+    Nobis iste ullam, itaque tempore labore facilis corporis quibusdam iure, obcaecati laboriosam veritatis sit id eaque maxime laudantium. Harum perspiciatis quia ab blanditiis adipisci ex accusantium voluptatem minima, amet voluptatum.
+    Eaque, fugit ducimus! Maxime earum reiciendis officia illo exercitationem reprehenderit corporis atque numquam dolore nobis vitae vero, ipsum id saepe est aliquam itaque sequi hic quia suscipit? Sint, explicabo quasi?
+    Doloribus similique totam beatae quod fuga eveniet velit exercitationem explicabo, illum minus quos reprehenderit corporis officia, blanditiis, tempora odit eum odio cupiditate. Qui, molestiae! Obcaecati eligendi tempore nesciunt omnis et.
+    Ab adipisci autem neque laboriosam iste quidem omnis expedita dolores! Quidem repudiandae pariatur, alias magnam quisquam commodi facilis voluptatibus suscipit temporibus, expedita aliquid quis veniam eligendi eius quo nihil quia.</p>
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit, ea saepe blanditiis dolor numquam aspernatur consequatur fugiat incidunt aliquam quasi atque a laboriosam voluptatibus corrupti sapiente eaque ipsam sed.
+        Nobis iste ullam, itaque tempore labore facilis corporis quibusdam iure, obcaecati laboriosam veritatis sit id eaque maxime laudantium. Harum perspiciatis quia ab blanditiis adipisci ex accusantium voluptatem minima, amet voluptatum.
+        Eaque, fugit ducimus! Maxime earum reiciendis officia illo exercitationem reprehenderit corporis atque numquam dolore nobis vitae vero, ipsum id saepe est aliquam itaque sequi hic quia suscipit? Sint, explicabo quasi?
+        Doloribus similique totam beatae quod fuga eveniet velit exercitationem explicabo, illum minus quos reprehenderit corporis officia, blanditiis, tempora odit eum odio cupiditate. Qui, molestiae! Obcaecati eligendi tempore nesciunt omnis et.
+        Ab adipisci autem neque laboriosam iste quidem omnis expedita dolores! Quidem repudiandae pariatur, alias magnam quisquam commodi facilis voluptatibus suscipit temporibus, expedita aliquid quis veniam eligendi eius quo nihil quia.</p>
+
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate impedit, ea saepe blanditiis dolor numquam aspernatur consequatur fugiat incidunt aliquam quasi atque a laboriosam voluptatibus corrupti sapiente eaque ipsam sed.
+            Nobis iste ullam, itaque tempore labore facilis corporis quibusdam iure, obcaecati laboriosam veritatis sit id eaque maxime laudantium. Harum perspiciatis quia ab blanditiis adipisci ex accusantium voluptatem minima, amet voluptatum.
+            Eaque, fugit ducimus! Maxime earum reiciendis officia illo exercitationem reprehenderit corporis atque numquam dolore nobis vitae vero, ipsum id saepe est aliquam itaque sequi hic quia suscipit? Sint, explicabo quasi?
+            Doloribus similique totam beatae quod fuga eveniet velit exercitationem explicabo, illum minus quos reprehenderit corporis officia, blanditiis, tempora odit eum odio cupiditate. Qui, molestiae! Obcaecati eligendi tempore nesciunt omnis et.
+            Ab adipisci autem neque laboriosam iste quidem omnis expedita dolores! Quidem repudiandae pariatur, alias magnam quisquam commodi facilis voluptatibus suscipit temporibus, expedita aliquid quis veniam eligendi eius quo nihil quia.</p>
+            <script>
+                let navbar=document.getElementById("navbar")
+                let menu=document.getElementById("menu")
+
+                window.onscroll=function(){
+                    if (window.pageYOffset >=menu.offsetTop) {
+                        navbar.classList.add("sticky");
+                    } else {
+                        navbar.classList.remove("sticky")
+                    }
+                }
+            </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> -->
+</body>
+
+</html> 
+
+
+
+
+<!--*************** second navbar the is best very nice look ******************-->
+<!-- <!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar respansive</title>
+    <link rel="stylesheet" href="first.css">
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>L</span>ogo</a>
+        <ul class="navbar open">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Servises</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="main">
+            <a href="#" class="user"><span>S</span>ign In</a>
+            <a href="#">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    js link
+    <script >
+        let menu=document.querySelector("#menu-icon");
+        let navbar=document.querySelector('.navbar');
+        console.log(menu)
+        menu.onclick=()=>{
+            menu.classList.toggle("bx-mrnu")
+            navbar.classList.toggle("open");
+            console.log("hello")
+        }
+    </script>
+</body>
+</html> -->
