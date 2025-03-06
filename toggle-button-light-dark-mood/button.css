@@ -1,0 +1,342 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    
+}
+button{
+    --color:rgb(255, 234, 0);
+    border: 0;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    background-color: var(--color);
+    padding: 10px 45px;
+    position: relative;
+    transition: .15s ease;
+}
+button:hover{
+    background: transparent;
+    color: var(--color);
+}
+button::before,
+button::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color);
+    transition: .35s ease;
+}
+button::before{
+    top: 0;
+    left: 0;
+}
+button::after{
+    bottom: 0;
+    right: 0;
+}
+button:hover::before,
+button:hover::after{
+    width: 100%;
+
+} */
+
+/* second type of button no:2 */
+/* button{
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background-color: yellowgreen;
+    transition: all .2s ease;
+    border: 0;
+}
+button:active{
+    transform: scale(.96);
+} */
+
+
+/* no:3 type of button here */
+
+
+/* body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 15px;
+    background-color: yellow;
+    border-radius: 8px;
+    border: 0;
+    transition: .5s ease;
+}
+button:hover{
+    color: yellow;
+    background-color: transparent;
+} */
+
+/* no:4 type of button */
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    position: relative;
+    width: 200px ;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid #3eff37;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+span{
+    background: #ff008c;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+button:hover span{
+    width: 100%;
+} */
+
+/* no:5 type of button */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    background: #2d2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 7px 15px;
+    border: 2px solid #3eff34;
+    background: transparent;
+    color: #fff;
+    position: relative;
+}
+button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ff00d9;
+    z-index: -1;
+    transition: .5s;
+
+}
+button:hover::before{
+    width: 100%;
+} */
+
+/* no:6 type of button */
+/* body{
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+   
+    background: cyan;
+    border: 3px solid cyan;
+    border-radius: 8px;
+}
+button:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan;
+} */
+  
+/* no:6 type of button */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+body{
+    height: 100vh;
+    background: #2d2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px ;
+    overflow: hidden;
+    transition: .5s;
+}
+a:hover{
+    color:#fff ;
+    background: yellowgreen;
+    box-shadow: 0 0 10px cyan,0 0 40px cyan, 0 0 80px cyan;
+    transition-delay: 1s;
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,cyan);
+}
+a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+a span:nth-child(3){
+    bottom: 0;
+    right:-100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,cyan);
+}
+a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1.5s;
+    transition-delay: .70s;
+}
+a span:nth-child(2){
+    top: -100%;
+    right:0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,cyan);
+}
+a:hover span:nth-child(2){
+    top: 100%;
+    transition: 2s;
+    transition-delay: .25s;
+}
+a span:nth-child(4){
+    bottom:-100%;
+    left:0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,cyan);
+}
+a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 1.1s;
+} */
+
+/* toggle button ok lear it is very important focus */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.hey{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hello{
+    width: 100%;
+    height: 100vh;
+    background-color:#2d2d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 200px;
+    height: 200px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.button{
+    background-color: #d2d2d2;
+    width: 200px;
+    height: 100px;
+    border-radius: 200px;
+    cursor: pointer;
+    position: relative;
+}
+.button::before{
+    content: '';
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 200px;
+    margin: 5px;
+    transition:all .2s ease;
+}
+input:checked ~ .button{
+    background: grey;
+}
+input:checked ~ .button::before{
+    transform: translateX(100px);
+    background-color: black;
+}
+input{
+    display: none;
+}
+
+
+

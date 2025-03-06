@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <link rel="stylesheet" href="button.css">
+</head>
+<body id="hello" class="hey ">
+    <div class="container">
+        <input type="checkbox" id="check">
+        <label for="check" class="button"></label>
+    </div>
+    <script>
+        let dark=document.querySelector("#check")
+        let hello=document.querySelector("#hello")
+        dark.onclick=()=>{
+          console.log('hello')
+          hello.classList.toggle("hello")
+        }
+    </script>
+</body>
+</html>
